@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "theme-color": "#0d1117",
     "color-scheme": "dark only",
     "og:url": "khaledfrayji.com", //main url
-    "og:image": "/joker.jpg", //when u share the link on apps the img would be displayed
+    "og:image": "/avatar.svg", //when u share the link on apps the img would be displayed
     "og:type": "website",
   },
 };
