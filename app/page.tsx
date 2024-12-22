@@ -1,36 +1,16 @@
-'use client'
 import { AnimatedPinDemo } from "@/components/AnimatedPinDemo";
 import { BentoGridThirdDemo } from "@/components/BentoGridThirdDemo";
+import Chatbot from "@/components/Chatbot";
 import { CodeBlockDemo } from "@/components/CodeBlockDemo";
-import { FloatingNavDemo } from "@/components/FloatingNavDemo";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { SpotlightPreview } from "@/components/SpotlightPreview";
 import { AnimatedTestimonialsDemo } from "@/components/Testimonial";
-import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const body = document.body;
-
-      if (scrollPosition > 100) {
-        body.classList.add('bg-custom-dark');
-        body.classList.remove('bg-custom-light');
-      } else {
-        body.classList.add('bg-custom-light');
-        body.classList.remove('bg-custom-dark');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   return (
     <>
-      <FloatingNavDemo />
+      <Navbar />
 
       <div id="home">
         <SpotlightPreview />
@@ -54,6 +34,7 @@ export default function Home() {
       <div id="contact">
         <Footer />
       </div>
+      <Chatbot />
     </>
   );
 }
