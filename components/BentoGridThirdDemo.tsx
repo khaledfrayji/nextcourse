@@ -310,7 +310,7 @@ const items = [
   },
 
   {
-    title: "I guess",
+    title: "Remember",
     description: (
       <span className="text-sm">
        We listen, we don't judge.

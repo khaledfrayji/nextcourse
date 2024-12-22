@@ -22,7 +22,7 @@ export function BackgroundLinesDemo() {
         your true potential.
       </p>
       <Link href={'#about'}>
-      <IoIosArrowDown size={40} color="white" className="mt-8 animated-arrow" />
+      <IoIosArrowDown size={40} color="white" className="my-20 animated-arrow" />
       </Link>
      
     </BackgroundLines>
