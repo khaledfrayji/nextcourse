@@ -8,26 +8,17 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent text-white p-10 w-full absolute font-semibold z-50">
-      <div className="flex justify-between items-center px-12">
-       
-        <Link href={"/"} className="flex items-center">
-        <h1>KF</h1>
+    <nav className="bg-transparent text-white fixed top-0 left-0 w-full z-50">
+      <div className="flex justify-between items-center p-6 md:px-12">
+        {/* Logo */}
+        <Link href={"/"}>
+          <h1 className="text-2xl font-bold">
+            K<span className="text-purple-300">F</span>
+          </h1>
         </Link>
-        {/* Burger Menu Icon */}
-        <button
-          className="md:hidden z-50"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? (
-            <IconX className="h-6 w-6 text-white" />
-          ) : (
-            <IconMenu2 className="h-6 w-6 text-white" />
-          )}
-        </button>
+
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-6">
+        <div className="hidden md:flex gap-8 text-lg font-medium">
           <Link href={"/"} className="hover:text-purple-300 transition">
             Home
           </Link>
@@ -41,39 +32,53 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
+
+        {/* Burger Menu Icon */}
+        <button
+          className="md:hidden z-50"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? (
+            <IconX className="h-8 w-8 text-white" />
+          ) : (
+            <IconMenu2 className="h-8 w-8 text-white" />
+          )}
+        </button>
       </div>
+
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg transform ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-40`}
+        className={`fixed inset-x-0 top-0 bg-black bg-opacity-90 backdrop-blur-lg transition-transform duration-500 ease-in-out ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
-        <div className="p-6 flex flex-col space-y-6">
+        <div className="flex flex-col items-center space-y-8 py-16">
           <Link
             href={"/"}
             onClick={() => setIsMenuOpen(false)}
-            className="text-xl hover:text-purple-300 transition"
+            className="text-2xl font-medium hover:text-purple-300 transition"
           >
             Home
           </Link>
           <Link
             href={"#about"}
             onClick={() => setIsMenuOpen(false)}
-            className="text-xl hover:text-purple-300 transition"
+            className="text-2xl font-medium hover:text-purple-300 transition"
           >
             About
           </Link>
           <Link
             href={"#projects"}
             onClick={() => setIsMenuOpen(false)}
-            className="text-xl hover:text-purple-300 transition"
+            className="text-2xl font-medium hover:text-purple-300 transition"
           >
             Projects
           </Link>
           <Link
             href={"#contact"}
             onClick={() => setIsMenuOpen(false)}
-            className="text-xl hover:text-purple-300 transition"
+            className="text-2xl font-medium hover:text-purple-300 transition"
           >
             Contact
           </Link>

@@ -41,7 +41,7 @@ export function AnimatedTestimonialsDemo() {
   return (
     <>
          <h1
-        className="text-center uppercase font-bold text-white pt-10 mt-30 text-4xl lg:text-6xl overflow-clip"
+        className="text-center uppercase font-bold text-white pt-10 mt-30 text-4xl lg:text-6xl "
         style={{ fontFamily: '"Tajawal", "Montserrat", sans-serif' }}
       >
        testi<span className="text-purple-300">monials</span>

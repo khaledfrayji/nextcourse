@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
       <div id="home">
         <SpotlightPreview />
       </div>

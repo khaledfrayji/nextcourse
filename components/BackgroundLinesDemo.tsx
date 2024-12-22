@@ -1,10 +1,8 @@
 import React from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
-import { IoIosArrowDown } from "react-icons/io";
-import Link from "next/link";
 export function BackgroundLinesDemo() {
   return (
-    <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+    <BackgroundLines className="flex items-center py-10 justify-center w-full flex-col overflow-clip px-4">
       <h2
         className="bg-clip-text text-transparent text-center bg-gradient-to-b 
   from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white 
@@ -21,10 +19,7 @@ export function BackgroundLinesDemo() {
         Only when it is dark enough, can you see the stars, guiding you towards
         your true potential.
       </p>
-      <Link href={'#about'}>
-      <IoIosArrowDown size={40} color="white" className="my-20 animated-arrow" />
-      </Link>
-     
+      
     </BackgroundLines>
   );
 }

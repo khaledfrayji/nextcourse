@@ -12,7 +12,6 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { img } from "framer-motion/client";
 
 export function BentoGridThirdDemo() {
   return (
