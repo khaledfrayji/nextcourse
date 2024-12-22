@@ -54,7 +54,7 @@ export const CodeBlock = ({
     : highlightLines;
 
   return (
-    <div className="relative w-full rounded-lg bg-slate-900 p-4 font-mono text-sm">
+    <div className="relative w-full rounded-lg bg-[#001] p-4 font-mono text-sm">
       <div className="flex flex-col gap-2">
         {tabsExist && (
           <div className="flex  overflow-x-auto">
@@ -91,7 +91,7 @@ export const CodeBlock = ({
         customStyle={{
           margin: 0,
           padding: 0,
-          background: "transparent",
+          background: "#001",
           fontSize: "0.875rem", // text-sm equivalent
         }}
         wrapLines={true}

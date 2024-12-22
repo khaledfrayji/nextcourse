@@ -7,37 +7,37 @@ import { CodeBlock } from "@/components/ui/code-block";
 export function CodeBlockDemo() {
   const code = `const Experience = () => {
 
-       {/* Hello, this is khaled enjoy :) */}
+{/* Hello, this is khaled enjoy :) */}
 
-        return ( 
-          <div className="p-4 border rounded-lg">
-            <h1 className="text-2xl font-bold mb-4">Google Developer Groups</h1>
-            <p className="mb-2">
-              <strong>Role:</strong> Member of the Web Development Team
-            </p>
-            <p className="mb-2">
-              <strong>Highlight:</strong> Organized workshops for students to build web portfolios and explore coding beyond the basics.
-            </p>
+return ( 
+<div className="p-4 border rounded-lg">
+  <h1>Google Developer Groups</h1>
+  <p>
+  <strong>Role:</strong> Member of the Web Development Team
+  </p>
+  <p className="mb-2">
+  <strong>Highlight:</strong> Organized workshops for students to build web portfolios and explore coding beyond the basics.
+  </p>
 
-            <h1 className="text-2xl font-bold mt-6 mb-4">Workshops & Mentorship</h1>
-            <p className="mb-2">
-              <strong>Focus:</strong> Live coding sessions with Tailwind CSS and React, emphasizing utility classes and mapping techniques.
-            </p>
-            <p className="mb-2">
-              <strong>Outcome:</strong> Empowered students to create professional portfolios with modern tools.
-            </p>
+  <h1 className="text-2xl font-bold mt-6 mb-4">Workshops & Mentorship</h1>
+  <p className="mb-2">
+  <strong>Focus:</strong> Live coding sessions with Tailwind CSS and React, emphasizing utility classes and mapping techniques.
+  </p>
+  <p className="mb-2">
+  <strong>Outcome:</strong> Empowered students to create professional portfolios with modern tools.
+  </p>
       
-           <h1 className="text-2xl font-bold mt-6 mb-4">Web Developer Freelancer</h1>
+  <h1 className="text-2xl font-bold mt-6 mb-4">Web Developer Freelancer</h1>
 
-           <p className="mb-2">
-           <strong>Collaborations:</strong> Worked closely with clients to transform their vision into responsive, user-centric designs.
-           </p>
+  <p className="mb-2">
+  <strong>Collaborations:</strong> Worked closely with clients to transform their vision into responsive, user-centric designs.
+  </p>
             
-           <p className="mb-2">
-           <strong>Achievements:</strong> Consistently exceeded client expectations, improving website performance and user engagement by over 30%.
-           </p>
+  <p className="mb-2">
+  <strong>Achievements:</strong> Consistently exceeded client expectations, improving website performance and user engagement by over 30%.
+  </p>
 
-          </div>
+</div>
         );
       };
       `;
@@ -53,7 +53,7 @@ export function CodeBlockDemo() {
       <CodeBlock
         language="jsx"
         filename="Khaled's Experience.tsx"
-        highlightLines={[9, 13, 14, 18]}
+        highlightLines={[3,7, 15, 23]}
         code={code}
       />
     </div>

@@ -46,7 +46,7 @@ export function AnimatedTestimonialsDemo() {
       >
        testi<span className="text-purple-300">monials</span>
       </h1>
-      <AnimatedTestimonials testimonials={testimonials} />;
+      <AnimatedTestimonials testimonials={testimonials} />
     </>
-  );
+  )
 }

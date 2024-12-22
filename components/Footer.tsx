@@ -12,7 +12,7 @@ const Footer = () => {
         Ready to level up your{" "}
         <span className="text-purple-300">digital presence?</span>
       </h1>
-      <h4 className="text-white py-10 font-sans text-center  ">
+      <h4 className="text-white py-10 px-10 font-sans text-center  ">
         Hit me up, and let’s chat about how I can help you crush your goals!
       </h4>
       <Link href={"mailto:khaledfrayji7@gmail.com"}>
