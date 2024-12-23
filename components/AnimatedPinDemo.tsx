@@ -37,26 +37,21 @@ const data = [
 export function AnimatedPinDemo() {
   return (
     <>
-      <h1
-        className="text-center uppercase font-bold text-white pt-10 mt-30 text-4xl lg:text-6xl"
-        style={{ fontFamily: '"Tajawal", "Montserrat", sans-serif' }}
-      >
-        Recent <span className="text-purple-300">Projects</span> 
-      </h1>
+     
       <div className="flex flex-wrap  items-center justify-center p-10 gap-16 mt-10">
         {data.map((element, index) => (
           <PinContainer key={index} title={element.title} href={element.link}>
-            <div className="flex basis-full flex-col tracking-tight rounded text-slate-100/50 sm:basis-1/2 w-[20rem]">
+            <div className="flex basis-full flex-col tracking-tight p-4  rounded text-slate-100/50 sm:basis-1/2 w-[20rem]">
               <img
                 src={element.image}
                 alt={element.title}
-                className="rounded mb-3"
+                className="rounded mb-3  transform rotate-[5deg] w-full"
               />
               <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100 line-clamp-1">
                 {element.title}
               </h3>
               <div className="text-base pb-8 font-normal line-clamp-1">
-                <span className="text-slate-500 ">{element.description}</span>
+                <span className="text-gray-300 ">{element.description}</span>
               </div>
 
               <div className="flex justify-between items-center">
